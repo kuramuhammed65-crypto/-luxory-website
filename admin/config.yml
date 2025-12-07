@@ -32,12 +32,14 @@ collections:
         file: "menu.html"
         fields:
           - { label: "Section Name", name: "section_name", widget: "string" }
-          - { label: "Items", name: "items", widget: "list", fields: 
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
               - { label: "Item Name", name: "name", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Price", name: "price", widget: "string" }
               - { label: "Image", name: "image", widget: "image" }
-            }
 
   - name: "gallery"
     label: "Gallery"
@@ -46,8 +48,11 @@ collections:
         name: "gallery"
         file: "gallery.html"
         fields:
-          - { label: "Images", name: "images", widget: "list", field: 
-              { label: "Image", name: "image", widget: "image" } }
+          - label: "Images"
+            name: "images"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
 
   - name: "contact"
     label: "Contact & Reservation"
